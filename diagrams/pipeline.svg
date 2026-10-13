@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="760" viewBox="0 0 720 760" role="img" aria-labelledby="pipeline-title pipeline-desc" font-family="Helvetica, Arial, sans-serif">
+  <title id="pipeline-title">How this one-pager was made: video to checked document</title>
+  <desc id="pipeline-desc">Flow diagram. A Weather Network video becomes captions and frames. Three agents then work at the same time: two fact-checkers and a map builder. Their results feed a charts and Word one-pager step. An independent QA agent checks it, and the final one-pager comes out.</desc>
+  <defs>
+    <marker id="pipeline-arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#4f5d75"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="720" height="760" fill="#f5f5f5"/>
+
+  <!-- zone for the three agents that run at the same time -->
+  <rect x="24" y="244" width="672" height="144" rx="8" fill="#2d3142" fill-opacity="0.03" stroke="#2d3142" stroke-opacity="0.30" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="36" y="232" font-size="16" font-weight="700" fill="#4f5d75">Three agents at once</text>
+
+  <!-- connectors (drawn before the boxes) -->
+  <g fill="none" stroke="#4f5d75" stroke-width="2" marker-end="url(#pipeline-arrow)">
+    <path d="M360 96 V136"/>
+  </g>
+  <g fill="none" stroke="#4f5d75" stroke-width="2">
+    <path d="M336 208 V260 Q336 268 328 268 H144 Q136 268 136 276 V296" marker-end="url(#pipeline-arrow)"/>
+    <path d="M360 208 V296" marker-end="url(#pipeline-arrow)"/>
+    <path d="M384 208 V260 Q384 268 392 268 H576 Q584 268 584 276 V296" marker-end="url(#pipeline-arrow)"/>
+    <path d="M136 368 V404 Q136 412 144 412 H328 Q336 412 336 420 V440" marker-end="url(#pipeline-arrow)"/>
+    <path d="M360 368 V440" marker-end="url(#pipeline-arrow)"/>
+    <path d="M584 368 V404 Q584 412 576 412 H392 Q384 412 384 420 V440" marker-end="url(#pipeline-arrow)"/>
+    <path d="M360 512 V552" marker-end="url(#pipeline-arrow)"/>
+    <path d="M360 624 V664" marker-end="url(#pipeline-arrow)"/>
+  </g>
+
+  <!-- 1. video (input) -->
+  <rect x="200" y="24" width="320" height="72" rx="8" fill="#f5f5f5"/>
+  <rect x="200" y="24" width="320" height="72" rx="8" fill="#4f5d75" fill-opacity="0.10" stroke="#7a8399" stroke-width="1.5"/>
+  <text x="360" y="56" font-size="20" font-weight="700" fill="#2d3142" text-anchor="middle">Weather Network video</text>
+  <text x="360" y="80" font-size="16" fill="#4f5d75" text-anchor="middle">by Kim MacDonald</text>
+
+  <!-- 2. captions and frames -->
+  <rect x="200" y="136" width="320" height="72" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1.5"/>
+  <text x="360" y="168" font-size="20" font-weight="700" fill="#2d3142" text-anchor="middle">Captions + frames</text>
+  <text x="360" y="192" font-size="16" fill="#4f5d75" text-anchor="middle">text read off the screen</text>
+
+  <!-- 3. three agents -->
+  <rect x="36" y="296" width="200" height="72" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1.5"/>
+  <text x="136" y="328" font-size="20" font-weight="700" fill="#2d3142" text-anchor="middle">Fact-checker</text>
+  <text x="136" y="352" font-size="16" fill="#4f5d75" text-anchor="middle">West</text>
+
+  <rect x="260" y="296" width="200" height="72" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1.5"/>
+  <text x="360" y="328" font-size="20" font-weight="700" fill="#2d3142" text-anchor="middle">Fact-checker</text>
+  <text x="360" y="352" font-size="16" fill="#4f5d75" text-anchor="middle">East + US</text>
+
+  <rect x="484" y="296" width="200" height="72" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1.5"/>
+  <text x="584" y="328" font-size="20" font-weight="700" fill="#2d3142" text-anchor="middle">Map builder</text>
+  <text x="584" y="352" font-size="16" fill="#4f5d75" text-anchor="middle">redraws the map</text>
+
+  <!-- 4. charts and Word one-pager -->
+  <rect x="200" y="440" width="320" height="72" rx="8" fill="#ffffff" stroke="#2d3142" stroke-width="1.5"/>
+  <text x="360" y="472" font-size="20" font-weight="700" fill="#2d3142" text-anchor="middle">Charts + Word one-pager</text>
+  <text x="360" y="496" font-size="16" fill="#4f5d75" text-anchor="middle">built from the checked facts</text>
+
+  <!-- 5. independent QA (focal) -->
+  <rect x="200" y="552" width="320" height="72" rx="8" fill="#f5f5f5"/>
+  <rect x="200" y="552" width="320" height="72" rx="8" fill="#eb6c36" fill-opacity="0.08" stroke="#eb6c36" stroke-width="2"/>
+  <text x="360" y="584" font-size="20" font-weight="700" fill="#2d3142" text-anchor="middle">Independent QA</text>
+  <text x="360" y="608" font-size="16" fill="#4f5d75" text-anchor="middle">a fresh agent checks every fact</text>
+  <text x="540" y="580" font-size="16" font-style="italic" fill="#4f5d75">Caught the Golden,</text>
+  <text x="540" y="600" font-size="16" font-style="italic" fill="#4f5d75">B.C. error</text>
+
+  <!-- 6. final one-pager -->
+  <rect x="200" y="664" width="320" height="72" rx="8" fill="#f5f5f5"/>
+  <rect x="200" y="664" width="320" height="72" rx="8" fill="#2d3142" fill-opacity="0.05" stroke="#4f5d75" stroke-width="1.5"/>
+  <text x="360" y="696" font-size="20" font-weight="700" fill="#2d3142" text-anchor="middle">Final one-pager</text>
+  <text x="360" y="720" font-size="16" fill="#4f5d75" text-anchor="middle">QA fixes applied</text>
+</svg>
